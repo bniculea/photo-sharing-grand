@@ -9,7 +9,8 @@
 
 1. Install `apollo-server` & `graphql`
 2. Define a dummy schema to test the setup
-
+3. Various setups
+4. Configured nodemon
 
 
 ## Helper URLs

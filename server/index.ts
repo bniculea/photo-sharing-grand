@@ -1,7 +1,9 @@
 import {ApolloServer} from 'apollo-server-express'
 import {buildSchema} from 'type-graphql'
-import resolvers from './graphql/resolvers'
+import resolvers from './src/graphql/resolvers'
 import Express from 'express'
+
+const PORT = process.env.PORT || 8080;
 
 const run = async () => {
     const schema = await buildSchema({
@@ -14,8 +16,8 @@ const run = async () => {
     const app = Express();
     server.applyMiddleware({ app })
 
-    app.listen( {port: 8080}, () => {
-        console.log('running....')
+    app.listen( {port: PORT}, () => {
+        console.log(`Server running on ${PORT}\n Apollo server running on ${server.graphqlPath}`)
     })
 }
 
