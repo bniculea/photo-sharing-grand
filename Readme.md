@@ -20,4 +20,7 @@
 - https://github.com/apollographql/apollo-server/issues/124
 - https://medium.com/swlh/graphql-todo-list-with-apollo-typescript-and-node-js-3c7df333e920
 - https://github.com/dotansimha/graphql-code-generator/issues/3275
-  https://blog.logrocket.com/integrating-typescript-graphql/ (for validation, decorators)
+- https://blog.logrocket.com/integrating-typescript-graphql/ (for validation, decorators)
+
+## GIT stuff
+https://gist.github.com/lmcneel/45594e550a3403d589bdcaad38138a83
