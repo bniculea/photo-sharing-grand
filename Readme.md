@@ -13,6 +13,7 @@
 4. Configured nodemon
 
 
+
 ## Helper URLs
 
 - https://khalilstemmler.com/blogs/typescript/eslint-for-typescript/
@@ -22,6 +23,8 @@
 - https://medium.com/swlh/graphql-todo-list-with-apollo-typescript-and-node-js-3c7df333e920
 - https://github.com/dotansimha/graphql-code-generator/issues/3275
 - https://blog.logrocket.com/integrating-typescript-graphql/ (for validation, decorators)
+- https://www.graphql-code-generator.com/docs/getting-started/installation
+- https://docs.nestjs.com/graphql/resolvers
 
 ## GIT stuff
 https://gist.github.com/lmcneel/45594e550a3403d589bdcaad38138a83

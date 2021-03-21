@@ -1,3 +1,3 @@
-export const NEO4J_URI = 'http://localhost:7474'
+export const NEO4J_URI = 'bolt://localhost:7687'
 export const NEO4J_USER = 'neo4j'
 export const NEO4J_PASSWORD = 'admin'

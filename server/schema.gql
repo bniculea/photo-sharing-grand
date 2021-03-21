@@ -3,13 +3,22 @@
 # !!!   DO NOT MODIFY THIS FILE BY YOURSELF   !!!
 # -----------------------------------------------
 
+type Mutation {
+  registerUser(userInput: UserInput!): User!
+}
+
 type Query {
-  registerUser(id: String!): User!
+  getUser(userId: String!): User!
 }
 
 """The user model"""
 type User {
   email: String!
   id: String!
+  username: String!
+}
+
+input UserInput {
+  email: String!
   username: String!
 }

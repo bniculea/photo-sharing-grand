@@ -14,7 +14,7 @@
     "declaration": false,
     "noFallthroughCasesInSwitch": true,
     "composite": false,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "moduleResolution": "node",
     "lib": [
       "dom",
