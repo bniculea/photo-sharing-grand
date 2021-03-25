@@ -15,10 +15,12 @@ type Query {
 type User {
   email: String!
   id: String!
+  password: String!
   username: String!
 }
 
 input UserInput {
   email: String!
+  password: String!
   username: String!
 }

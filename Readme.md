@@ -11,6 +11,7 @@
 2. Define a dummy schema to test the setup
 3. Various setups
 4. Configured nodemon
+5. Start with neo4j calls in the same file, refactor while you code along
 
 
 
