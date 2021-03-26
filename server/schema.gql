@@ -3,8 +3,28 @@
 # !!!   DO NOT MODIFY THIS FILE BY YOURSELF   !!!
 # -----------------------------------------------
 
+"""The comment user model"""
+type Comment {
+  content: String!
+  id: String!
+}
+
 type Mutation {
+  createPost(postInput: PostInput!): Post!
   registerUser(userInput: UserInput!): User!
+}
+
+"""The post model"""
+type Post {
+  comments: [Comment!]!
+  id: String!
+  image: String!
+  ownerId: String!
+}
+
+input PostInput {
+  image: String!
+  ownerId: String!
 }
 
 type Query {

@@ -1,6 +1,6 @@
 import bcrypt from 'bcrypt';
 
-import DbSession from "../repository/DbSession";
+import DbSession from "./DbSession";
 import {UserInput} from "../graphql/resolvers/types/user-input";
 import {User} from "../model/User";
 import {UserInputError} from "apollo-server-errors";
@@ -8,7 +8,7 @@ import {UserInputError} from "apollo-server-errors";
 
 export class UserService {
 
-    static createUser = async (userInput: UserInput): Promise<any> => {
+    static createUser = async (userInput: UserInput): Promise<User> => {
         const session = DbSession.getSession()
         try {
             userInput.password = await bcrypt.hash(userInput.password, 10);

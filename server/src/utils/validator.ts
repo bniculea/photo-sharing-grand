@@ -1,9 +1,21 @@
 import {UserInput} from "../graphql/resolvers/types/user-input";
 import {UserService} from "../service/UserService";
+import {PostInput} from "../graphql/resolvers/types/post-input";
 
-export class UserInputValidator {
 
-    static async getStatus(userInput: UserInput): Promise<Array<string>> {
+   export const checkPostInputValidation = async (postInput: PostInput): Promise<Array<string>> => {
+       const errors: Array<string> = Array.from('')
+       if (postInput.image.trim() === '') {
+            errors.push('The image url cannot be empty')
+       }
+
+       if (postInput.ownerId.trim() === '') {
+           errors.push('The post should have an owner')
+       }
+
+       return errors
+   }
+   export const checkUserInputValidation = async (userInput: UserInput): Promise<Array<string>> => {
         const errors: Array<string> = Array.from('')
         if (userInput.username.trim() === '') {
             errors.push('The username cannot be empty')
@@ -27,6 +39,3 @@ export class UserInputValidator {
 
         return errors
     }
-
-
-}
